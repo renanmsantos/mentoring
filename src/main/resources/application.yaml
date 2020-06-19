@@ -1,1 +1,9 @@
+server:
+  port: 8080
+  context-path: /
 
+spring:
+  jpa.hibernate.ddl-auto: update
+  datasource.url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example
+  datasource.username: test
+  datasource.password: test
