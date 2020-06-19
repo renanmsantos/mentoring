@@ -4,6 +4,6 @@ server:
 
 spring:
   jpa.hibernate.ddl-auto: update
-  datasource.url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example
-  datasource.username: test
-  datasource.password: test
+  datasource.url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/mentoring
+  datasource.username: user_mentoring
+  datasource.password: passmentoring
