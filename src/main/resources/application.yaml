@@ -1,9 +1,14 @@
 server:
   port: 8080
-  context-path: /
+  servlet:
+    application-display-name: mentoring
+    context-path: /mentoring
 
 spring:
-  jpa.hibernate.ddl-auto: create-drop
-  datasource.url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/mentoring
-  datasource.username: user_mentoring
-  datasource.password: passmentoring
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: create-drop
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/mentoring
+    username: user_mentoring
+    password: passmentoring
